@@ -1,1 +1,32 @@
-<h1>hello world</h1>
+<div class="container">
+  <h1>CoinGecko API</h1>
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th *ngFor="let title of titles">
+          {{title}}
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let coin of coins; let i = index">
+        <td class="text-muted">{{i + 1}}</td>
+        <td>
+          <img [src]="coin.image" alt="{{coin.name}}" style="width:2rem">
+          <span class="ms-2"> {{coin.name}}</span>
+          <span class="text-muted text-uppercase ms-2">{{coin.symbol}}</span>
+        </td>
+        <td>
+          {{coin.current_price}}€
+        </td>
+        <td [ngClass]="coin.price_change_percentage_24h > 0 ? 'text-success': 'text-danger'">
+          {{coin.price_change_percentage_24h.toLocaleString()}}
+        </td>
+        <td>
+          {{coin.total_volume.toLocaleString()}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
