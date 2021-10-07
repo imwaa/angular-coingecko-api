@@ -1,8 +1,8 @@
 <div class="container">
   <h1 class="my-3">CoinMarket</h1>
 
-  <input type="text" class="form-control bg-dark text-light border-0 my-4 text-center" (keyup)="searchCoin()"
-    [(ngModel)]="searchText" placeholder="Search" />
+  <input type="text" aria-selected="false" class="form-control bg-dark text-light border-0 my-4 text-center"
+    style="font-size: 25px;" (keyup)="searchCoin()" [(ngModel)]="searchText" placeholder="Search" />
 
   <table class="table table-dark">
     <thead>
