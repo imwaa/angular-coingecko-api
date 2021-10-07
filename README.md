@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
 
+## Link of the web app : https://imwaa.github.io/angular-coingecko-api/
+
 ## Screen Captures
 <img src="https://i.imgur.com/IlgdnGP.png">
 <img src = "https://user-images.githubusercontent.com/69726409/136375161-7e315116-e279-49ba-91f3-2dc067cb7f6f.png">
